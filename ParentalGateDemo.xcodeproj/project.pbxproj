@@ -22,6 +22,8 @@
 		599FCDDB18BACE9800A44F52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599FCDBA18BACE9700A44F52 /* UIKit.framework */; };
 		599FCDE318BACE9800A44F52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 599FCDE118BACE9800A44F52 /* InfoPlist.strings */; };
 		599FCDE518BACE9800A44F52 /* ParentalGateDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 599FCDE418BACE9800A44F52 /* ParentalGateDemoTests.m */; };
+		599FCDF018BACF5A00A44F52 /* OCParentalGate.m in Sources */ = {isa = PBXBuildFile; fileRef = 599FCDEF18BACF5A00A44F52 /* OCParentalGate.m */; };
+		599FCDF418BAD00600A44F52 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 599FCDF218BAD00600A44F52 /* UIAlertView+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		599FCDE018BACE9800A44F52 /* ParentalGateDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParentalGateDemoTests-Info.plist"; sourceTree = "<group>"; };
 		599FCDE218BACE9800A44F52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		599FCDE418BACE9800A44F52 /* ParentalGateDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentalGateDemoTests.m; sourceTree = "<group>"; };
+		599FCDEE18BACF5A00A44F52 /* OCParentalGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCParentalGate.h; sourceTree = "<group>"; };
+		599FCDEF18BACF5A00A44F52 /* OCParentalGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCParentalGate.m; sourceTree = "<group>"; };
+		599FCDF218BAD00600A44F52 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		599FCDF318BAD00600A44F52 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		599FCDAA18BACE9600A44F52 = {
 			isa = PBXGroup;
 			children = (
+				599FCDF118BACF6100A44F52 /* OCParentalGate */,
 				599FCDBC18BACE9700A44F52 /* ParentalGateDemo */,
 				599FCDDE18BACE9800A44F52 /* ParentalGateDemoTests */,
 				599FCDB518BACE9700A44F52 /* Frameworks */,
@@ -153,6 +160,25 @@
 				599FCDE118BACE9800A44F52 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		599FCDF118BACF6100A44F52 /* OCParentalGate */ = {
+			isa = PBXGroup;
+			children = (
+				599FCDF518BAD00B00A44F52 /* AlertView Category */,
+				599FCDEE18BACF5A00A44F52 /* OCParentalGate.h */,
+				599FCDEF18BACF5A00A44F52 /* OCParentalGate.m */,
+			);
+			name = OCParentalGate;
+			sourceTree = "<group>";
+		};
+		599FCDF518BAD00B00A44F52 /* AlertView Category */ = {
+			isa = PBXGroup;
+			children = (
+				599FCDF218BAD00600A44F52 /* UIAlertView+Blocks.m */,
+				599FCDF318BAD00600A44F52 /* UIAlertView+Blocks.h */,
+			);
+			name = "AlertView Category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				599FCDC718BACE9800A44F52 /* OCAppDelegate.m in Sources */,
+				599FCDF018BACF5A00A44F52 /* OCParentalGate.m in Sources */,
+				599FCDF418BAD00600A44F52 /* UIAlertView+Blocks.m in Sources */,
 				599FCDC318BACE9700A44F52 /* main.m in Sources */,
 				599FCDD018BACE9800A44F52 /* OCViewController.m in Sources */,
 			);

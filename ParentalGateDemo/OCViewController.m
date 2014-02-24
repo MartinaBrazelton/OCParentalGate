@@ -7,10 +7,17 @@
 //
 
 #import "OCViewController.h"
+#import "OCParentalGate.h"
+
 
 @interface OCViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *pressMeButton;
+
+- (IBAction)pressMeButtonPressed:(UIButton *)sender;
+
 @end
+
 
 @implementation OCViewController
 
@@ -24,6 +31,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pressMeButtonPressed:(UIButton *)sender
+{
+    [OCParentalGate presentParentalGateWithBlock:^(BOOL success) {
+        if (success) {
+            UIAlertView *alert = [UIAlertView.alloc initWithTitle:NSLocalizedString(@"You answered correctly", nil) message:NSLocalizedString(@"Access granted", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
 }
 
 @end

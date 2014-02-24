@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Obsessive-C Lab. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 @interface OCViewController : UIViewController
 
